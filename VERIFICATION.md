@@ -13,6 +13,10 @@ Coverage includes seeded randomness, daily dates, every fusion recipe, orbit lim
 
 Expansion coverage includes version 1 migration, independent available/lifetime tallies, all 20 ship modules, prerequisites, maximum ranks, insufficient funds, persistent-write rollback, stale-tab purchase prevention, ship arrival at 500,000, clockwise flight, blasts/missiles/laser attacks, stellar score gates, all four forms' attacks, black-hole projectile absorption, all skill prerequisites, stellar point spending, level-100 XP pacing, boss dimensions/damage, and three new boss patterns.
 
+## Published game
+
+GitHub Pages successfully built deployment commit `df23803` from `gh-pages`. The live HTML, JavaScript, CSS, and favicon returned HTTP 200. The hosted menu rendered and clicking PLAY entered the live arena.
+
 ## Browser observations and limits
 
 The initial playable build was inspected in the in-app browser: the menu, first enemy/rock pickup, live orbit, multiple parts, fusion, and three-choice upgrade panel were observed. No browser errors were reported during those observed flows.

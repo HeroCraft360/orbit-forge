@@ -4,7 +4,9 @@ A playable, original browser survival roguelite built with **Phaser 3, strict Ty
 
 ## Play
 
-Open the running development preview at **http://127.0.0.1:5175**.
+**[Play Orbit Forge online](https://herocraft360.github.io/orbit-forge/)** ? no installation required.
+
+For a running local development preview, use **http://127.0.0.1:5175**.
 
 The release ZIP includes a production build. For a source checkout, run `npm ci` and `npm run build` first.
 
@@ -128,8 +130,12 @@ Debug controls are enabled only in a Vite development build and can be disabled 
 
 The F1 lab also exposes ship/star milestone triggers, the new bosses, material grants, level 100, and forced collapse. These controls intentionally change local test scores and materials. Use an isolated browser profile/origin for testing. Production runs expose neither the lab nor the inspection handle.
 
-## Publish later
+## GitHub Pages
 
-`npm run build` creates a static `dist/` folder with relative asset paths. Upload its contents to a static web host. There are no API secrets or server requirements. Public deployment and online services are not included.
+The live game is hosted at **https://herocraft360.github.io/orbit-forge/** and linked from the repository About panel.
+
+GitHub Pages publishes the root of the `gh-pages` branch over HTTPS. That branch contains the compiled `dist/` contents and a `.nojekyll` marker; editable source stays on `main`. To publish a later game update, run `npm run build` and update the deployment branch with the new `dist/` contents. Changes to `main` alone do not update the hosted build.
+
+The Vite build uses relative asset paths, so it works under the repository URL. No API secrets, accounts, or backend are required. Browser saves remain local to each browser and origin.
 
 See `VERIFICATION.md` for executed checks and remaining validation limits.
